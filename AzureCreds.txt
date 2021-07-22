@@ -1,6 +1,6 @@
-AzureUserName= odl_user_152199@udacitylabs.onmicrosoft.com
-AzurePassword= gczd18RPA*Yz
+AzureUserName= odl_user_152216@udacitylabs.onmicrosoft.com
+AzurePassword= igsr51NAA*ro
 AzureTenantID= 
-AzureSubscriptionID= 510b94ba-e453-4417-988b-fbdc37b55ca7
-DeploymentID= 152199
+AzureSubscriptionID= 9b72f9e6-56c5-4c16-991b-19c652994860
+DeploymentID= 152216
 
