@@ -2,10 +2,10 @@
 # Udacity Machine Learning Engineer with Microsoft Azure Nanodegree
 # Capstone Project: Telecom Customer Churn Predictor By: Thomas Choong
 
-
+<br>
 # Introduction
-The telecom industry has always been a high-activity industry with many customers coming and going. There can be multiple reasons why a customer decides to leave a provider (better pricing and/or product elsewhere, poor service, better reliability, etc.). Key to any company/business is to retain their customers and prevent churners; it is more cost-efficient to keep an existing customer than trying to acquire a net-new prospect. Therefore, it is key for many businesses/companies to identify their high-risk customers and address their potential issues before they've churned. 
-This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn), I will be training the model on the aforementioned dataset with Azure's AutoML & Hyperdrive feature. 
+The telecom industry has always been a high-activity industry with many customers coming and going. There can be multiple reasons why a customer decides to leave a provider (better pricing and/or product elsewhere, poor service, better reliability, etc.). Key to any company/business is to retain their customers and prevent churners; it is more cost-efficient to keep an existing customer than trying to acquire a net-new prospect. Therefore, it is key for many businesses/companies to identify their high-risk customers and address their potential issues before they've churned. <br>
+This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn), I will be training the model on the aforementioned dataset with Azure's AutoML & Hyperdrive feature. <br>
 After training, the best model will be selected and pushed to an endpoint to be consumed. The result should give the user 'Yes' or 'No' indicating whether they are high risk churners. 
 
 This particular real-time API can open possibilities for internal teams to better service the customers:
@@ -14,30 +14,30 @@ This particular real-time API can open possibilities for internal teams to bette
 
 
 ## Dataset
-This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)
-It has the following columns and the Y variable 'Churn' is 'Yes' or 'No'
-customerID - Unique Customer Acct #
-gender - What gender is the acct holder
-SeniorCitizen - Is the acct holder a senior citizen
-Partner - Does the acct holder have a partner
-Dependents - How many dependents does the acct holder have
-tenure - how long (months) has the acct holder been with the company
-PhoneService - does the acct holder have phone service 
-MultipleLines - does the acct holder have multiple lines
-InternetService - does the acct holder have internet service 
-OnlineSecurity - does the acct holder have online security service 
-OnlineBackup - does the acct holder have online backup service 
-DeviceProtection - does the acct holder have device protection service 
-TechSupport - does the acct holder have tech support service 
-StreamingTV - does the acct holder have streaming TV service 
-StreamingMovies - does the acct holder have streaming movies service 
-Contract- is the acct holder on contract
-PaperlessBilling - is the acct holder subscribed to Paperless Billing
-PaymentMethod - what is the payment method of acct holder
-MonthlyCharges - What are the monthly charges the acct holder pays
-TotalCharges - What is the total amount an acct holder pays
-Churn - Did the acct holder churn (Y Variable)
-![image](https://user-images.githubusercontent.com/58406063/127240350-c8566d4f-1a3b-476a-ae24-07d695156cc7.png)
+This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
+It has the following columns and the Y variable 'Churn' is 'Yes' or 'No'<br>
+customerID - Unique Customer Acct #<br>
+gender - What gender is the acct holder<br>
+SeniorCitizen - Is the acct holder a senior citizen<br>
+Partner - Does the acct holder have a partner<br>
+Dependents - How many dependents does the acct holder have<br>
+tenure - how long (months) has the acct holder been with the company<br>
+PhoneService - does the acct holder have phone service <br>
+MultipleLines - does the acct holder have multiple lines<br>
+InternetService - does the acct holder have internet service <br>
+OnlineSecurity - does the acct holder have online security service <br>
+OnlineBackup - does the acct holder have online backup service <br>
+DeviceProtection - does the acct holder have device protection service <br>
+TechSupport - does the acct holder have tech support service <br>
+StreamingTV - does the acct holder have streaming TV service <br>
+StreamingMovies - does the acct holder have streaming movies service <br>
+Contract- is the acct holder on contract<br>
+PaperlessBilling - is the acct holder subscribed to Paperless Billing<br>
+PaymentMethod - what is the payment method of acct holder<br>
+MonthlyCharges - What are the monthly charges the acct holder pays<br>
+TotalCharges - What is the total amount an acct holder pays<br>
+Churn - Did the acct holder churn (Y Variable)<br>
+
 
 
 ### Overview
