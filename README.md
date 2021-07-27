@@ -6,7 +6,6 @@ By: Thomas Choong
 <br>
 
 ## Introduction
-
 <br>
 The telecom industry has always been a high-activity industry with many customers coming and going. There can be multiple reasons why a customer decides to leave a provider (better pricing and/or product elsewhere, poor service, better reliability, etc.). Key to any company/business is to retain their customers and prevent churners; it is more cost-efficient to keep an existing customer than trying to acquire a net-new prospect. Therefore, it is key for many businesses/companies to identify their high-risk customers and address their potential issues before they've churned. <br>
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn), I will be training the model on the aforementioned dataset with Azure's AutoML & Hyperdrive feature. <br>
