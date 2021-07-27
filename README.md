@@ -19,6 +19,8 @@ This particular real-time API can open possibilities for internal teams to bette
 ## Dataset
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
 It has the following columns and the Y variable 'Churn' is 'Yes' or 'No'<br>
+<br>
+<font size = '9'>
 customerID - Unique Customer Acct #<br>
 gender - What gender is the acct holder<br>
 SeniorCitizen - Is the acct holder a senior citizen<br>
@@ -40,8 +42,7 @@ PaymentMethod - what is the payment method of acct holder<br>
 MonthlyCharges - What are the monthly charges the acct holder pays<br>
 TotalCharges - What is the total amount an acct holder pays<br>
 Churn - Did the acct holder churn (Y Variable)<br>
-
-
+</font>
 
 ### Overview
 *TODO*: Explain about the data you are using and where you got it from.
