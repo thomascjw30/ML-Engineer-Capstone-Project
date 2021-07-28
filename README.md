@@ -86,7 +86,7 @@ The properties of the best performing model from AutoML (Voting Ensemble Model)
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/auto_bestmodel_features.png'>
 <br>
 <br>
-The results for AutoML was decent, although I personally hoped it would have been higher, but 81% accuracy on a binary classification example is still pretty good. Improvements could've been done by feature engineering the data for more features/variables but given this project's main focus is to train via AutoML + Hyperdrive and deploy the best model for endpoint consumption, I left it as is for now.
+The results for AutoML were decent, although I personally hoped it would have been higher, but 81% accuracy on a binary classification example is still pretty good. Improvements could've been done by feature engineering the data for more features/variables but given this project's main focus is to train via AutoML + Hyperdrive and deploy the best model for endpoint consumption, I left it as is for now.
 <br><br>
 
 ## Hyperparameter Tuning - 3rd Step
@@ -96,9 +96,14 @@ Before proceeding, there were lots I had to tweak, as Hyperdrive did not functio
 Firstly, I had to create/modify my train.py script to better clean and prepare my data for training.
 <br>
 I converted many of the variables to dummy variables as many of them were categorical variables (all were categorical variables except 'Monthly charge' and 'total charge').
+I left the dummy variables and dropped the original variables as I did not need redundant variables.
 Additionally, I split the data between training and test set, leaving 20% for testing.
 <img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/train_script.png'>
 
+After the data was properly configured, I began to modify my main algorithmn. Seeing how VotingEnsemble did well, I wanted to stick with Ensemble algorithmns and had lots of success before utilizing RandomForestClassifier, so I decided to train this dataset with RandomForestClassifier and a wide range of hyperparameters.
+<br>
+I decided to tune the number of trees within the forest and the maximum depth of the tree.
+<img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/train_script2.png'>
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
