@@ -13,9 +13,10 @@ The telecom industry has always been a high-activity industry with many customer
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn), I will be training the model on the aforementioned dataset with Azure's AutoML & Hyperdrive feature (classification training). <br>
 After training, the best model will be selected and pushed to an endpoint to be consumed. The result should give the user 'Yes' or 'No' indicating whether they are high risk churners. 
 
-This particular real-time API can open possibilities for internal teams to better service the customers:
+This particular real-time API can open possibilities for internal teams to better service their customers:
 - Frontline Reps can have insight to the specific customer
 - Sales & Marketing may have the option to target these specific customers to prevent churn
+- Finance could use this to potentially budget expenses, measure future churn, etc.
 
 ## Project Architecture
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
