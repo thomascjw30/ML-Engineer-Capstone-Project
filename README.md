@@ -104,5 +104,7 @@ The properties of the best performing model from AutoML (Voting Ensemble Model)
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+## Improvement Suggestions
+Increasing the accuracy:
+- I did not perform any additional feature engineering, I believe if I did perform and add new features i
+- Since the dataset is not balanced, one way to increase the accuracy of the model would be to properly balance the dataset whether that is to under sample the majority y data or over sample the minority y variable
