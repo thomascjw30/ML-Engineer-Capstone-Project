@@ -66,7 +66,18 @@ For Hyperdrive, I have reference the file in the train.py script:
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_trainpy.png'>
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+AutoML is a feature built in Microsoft Azure ML studio, it an automated process/feature where it reads in the dataset, run multiple iterations with various algorithms. After a number of runs, it will produce the best model depending on the criteria being measured (it can be accuracy, recall, precision, AUC, MAE, MSE, etc.).
+<br>
+For my dataset, I have selected Accuracy as the main criteria for determining the best model (as it is a binary classification model). <br>
+Additionally, I set timeout to 30 minutes and max_concurrent_iterations to 10 (since I did not want to wait too long and it is a trial account with no additional cost on my end).
+<br>
+The Y-Variable is 'Churn' - as I am predicting whether an account will likely churn or not.
+
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_settings.png'>
+The best performing algorithmn for my dataset was VotingEnsemble.
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_widget_run_detail.png'>
+
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
