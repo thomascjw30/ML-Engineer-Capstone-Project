@@ -15,6 +15,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 from azureml.core import Dataset
 from azureml.core import Dataset, Datastore
 from azureml.data.datapath import DataPath
+from sklearn.ensemble import RandomForestClassifier
 
 # TODO: Create TabularDataset using TabularDatasetFactory
 # Data is located at:
@@ -77,27 +78,46 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size =0.2, random_s
 
 # ## YOUR CODE HERE ###a
 
-run = Run.get_context()
+# run = Run.get_context()
 
+
+# def main():
+#     # Add arguments to script
+#     parser = argparse.ArgumentParser()
+
+#     parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
+#     parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
+
+#     args = parser.parse_args()
+
+#     run.log("Regularization Strength:", np.float(args.C))
+#     run.log("Max iterations:", np.int(args.max_iter))
+
+#     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
+
+#     accuracy = model.score(x_test, y_test)
+#     run.log("Accuracy", np.float(accuracy))
 
 def main():
     # Add arguments to script
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
-    parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
+    parser.add_argument('--n_estimators', type=int, default=100, help="The number of trees in the forest.")
+    parser.add_argument('--max_depth', type=int, default=10, help="The maximum depth of the tree.")
 
     args = parser.parse_args()
 
-    run.log("Regularization Strength:", np.float(args.C))
-    run.log("Max iterations:", np.int(args.max_iter))
+    run = Run.get_context()
 
-    model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
+    run.log("Number of Estimators:", np.float(args.n_estimators))
+    run.log("Max iterations:", np.int(args.max_depth))
+
+    model = RandomForestClassifier(n_estimators=args.n_estimators, max_depth=args.max_depth,random_state=42).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
     os.makedirs('outputs', exist_ok=True)
-    joblib.dump(value=model, filename=f"./model_outputs/best_run_hyperdrive.pkl")
+    joblib.dump(value=model, filename=f"./outputs/best_run_hyperdrive.pkl")
 
 
 if __name__ == '__main__':
