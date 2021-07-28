@@ -98,12 +98,33 @@ Firstly, I had to create/modify my train.py script to better clean and prepare m
 I converted many of the variables to dummy variables as many of them were categorical variables (all were categorical variables except 'Monthly charge' and 'total charge').
 I left the dummy variables and dropped the original variables as I did not need redundant variables.
 Additionally, I split the data between training and test set, leaving 20% for testing.
+
 <img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/train_script.png'>
 
-After the data was properly configured, I began to modify my main algorithmn. Seeing how VotingEnsemble did well, I wanted to stick with Ensemble algorithmns and had lots of success before utilizing RandomForestClassifier, so I decided to train this dataset with RandomForestClassifier and a wide range of hyperparameters.
+I began to modify my main algorithmn within the train.py script. 
+Seeing how VotingEnsemble did so well in the AutoML run, I wanted to stick with Ensemble algorithmns. 
+Having had past success utilizing RandomForestClassifier for classification problems, I decided to train this dataset with RandomForestClassifier and a wide range of hyperparameters.
 <br>
-I decided to tune the number of trees within the forest and the maximum depth of the tree.
+I decided to tune the number of trees within the forest and the maximum depth of the tree. See below for the args statements.
 <img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/train_script2.png'>
+
+After the train.py script was properly configured, now we move into jupyternotebook to begin the HyperDrive configuration.
+I had 10-500 # of trees as my first hyperparameter tuning, followed by 1-10 in depths of each tree within the algorithmn.
+I stuck with a early termination policy of BanditPolicy with slack factor of 0.1 and evaluation interval of 10.
+Again, the goal was to have the highest % of accuracy possible. 
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_configuration.png'>
+
+<br>
+The run widget details of the hyperdrive run, unfortunately, the best model produced by RandomForestClassifier and my hyperparameters could not exceed that of AutoML's best model. Accuracy came in at just 78.6%.
+
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_run_widget.png'>
+
+The best model from the Hyperdrive training was having a max depth of 9 along with 90 trees.
+
+<img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_run_best_model_azure.png' >
+<img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_best_model.png' >
+
+
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
