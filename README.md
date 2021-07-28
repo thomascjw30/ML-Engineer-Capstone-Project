@@ -18,7 +18,7 @@ This particular real-time API can open possibilities for internal teams to bette
 - Sales & Marketing may have the option to target these specific customers to prevent churn
 - Finance could use this to potentially budget expenses, measure future churn, etc.
 
-### Task
+## Task
 The task for this project is to clean, prepare the data for training utilizing both Azure's AutoML feature and Hyperdrive method (to perform hyperparameter tuning). Upon successful training, the best model from either the AutoML/Hyperdrive run will be registered and deployed to an endpoint where one can consume it (by entering JSON data and the resulting endpoint will return a 'Yes' or 'No' as to whether the entered data signifies it is a higher churner or not).
 <br>
 ### Project Architecture
@@ -54,7 +54,7 @@ TotalCharges - What is the total amount an acct holder pays<br>
 Churn - Did the acct holder churn (Y Variable)<br>
 </font>
 
-### Access
+## Access
 For Microsoft Azure access, I created my own trial account, Ms Azure was able to grant me 250 CAD credits and a full month of access.
 <br>
 For dataset access, I have downloaded the dataset and uploaded into github to directly connect to the flat file (<a href="https://raw.githubusercontent.com/thomascjw30/ML-Engineer-Capstone-Project/main/WA_Fn-UseC_-Telco-Customer-Churn.csv">link</a>).
