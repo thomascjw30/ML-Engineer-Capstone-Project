@@ -66,6 +66,8 @@ For AutoML, I have referenced the file in the jupyter notebook (automl.ipynb).:
 For Hyperdrive, I have reference the file in the train.py script: 
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_trainpy.png'>
 
+
+
 ## Automated ML
 AutoML is a feature built in Microsoft Azure ML studio, it an automated process/feature where it reads in the dataset, run multiple iterations with various algorithms. After a number of runs, it will produce the best model depending on the criteria being measured (it can be accuracy, recall, precision, AUC, MAE, MSE, etc.).
 <br>
@@ -77,10 +79,12 @@ The Y-Variable is 'Churn' - as I am predicting whether an account will likely ch
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_settings.png'>
 The best performing algorithmn for my dataset was VotingEnsemble (w/ 80.9% accuracy).
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_widget_run_detail.png'>
+<br>
+The properties of the best performing model from AutoML (Voting Ensemble Model)
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/auto_bestmodel_features.png'>
+<br>
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_best_model_gui.png'>
 
-
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
