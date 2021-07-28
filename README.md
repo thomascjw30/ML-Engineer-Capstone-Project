@@ -79,11 +79,13 @@ The Y-Variable is 'Churn' - as I am predicting whether an account will likely ch
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_settings.png'>
 The best performing algorithmn for my dataset was VotingEnsemble (w/ 80.9% accuracy).
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_widget_run_detail.png'>
+The best performing model (Azure GUI).
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_best_model_gui.png'>
 <br>
 The properties of the best performing model from AutoML (Voting Ensemble Model)
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/auto_bestmodel_features.png'>
 <br>
-<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_best_model_gui.png'>
+
 
 
 ## Hyperparameter Tuning
