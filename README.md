@@ -55,7 +55,15 @@ Churn - Did the acct holder churn (Y Variable)<br>
 </font>
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+For Microsoft Azure, I created my own trial access.
+<br>
+I have downloaded the dataset and uploaded into github to directly connect to the flat file (link here: "https://raw.githubusercontent.com/thomascjw30/ML-Engineer-Capstone-Project/main/WA_Fn-UseC_-Telco-Customer-Churn.csv").
+<br>
+For AutoML, I have referenced the file in the jupyter notebook (automl.ipynb).:
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_automl.png'>
+<br>
+For Hyperdrive, I have reference the file in the train.py script: 
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_trainpy.png'>
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
