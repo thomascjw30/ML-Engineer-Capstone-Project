@@ -24,7 +24,7 @@ The task for this project is to clean, prepare the data for training utilizing b
 ### Project Architecture
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
 
-## Dataset
+## Dataset - First Step
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
 This will be a classification model as I am training on whether a customer will churn or not. <br>
 Before any training with the dataset, I've made sure to remove customerID field as I believe it will not impact anything as it is a unique variable to each account.
@@ -68,7 +68,7 @@ For Hyperdrive, I have reference the file in the train.py script:
 
 
 
-## Automated ML
+## Automated ML - 2nd Step
 AutoML is a feature built in Microsoft Azure ML studio, it an automated process/feature where it reads in the dataset, run multiple iterations with various algorithms. After a number of runs, it will produce the best model depending on the criteria being measured (it can be accuracy, recall, precision, AUC, MAE, MSE, etc.).
 <br>
 For my dataset, I have selected Accuracy as the main criteria for determining the best model (as it is a binary classification model). <br>
