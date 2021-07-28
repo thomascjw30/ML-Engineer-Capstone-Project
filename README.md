@@ -18,11 +18,16 @@ This particular real-time API can open possibilities for internal teams to bette
 - Sales & Marketing may have the option to target these specific customers to prevent churn
 - Finance could use this to potentially budget expenses, measure future churn, etc.
 
-## Project Architecture
+### Task
+The task for this project is to clean, prepare the data for training utilizing both Azure's AutoML feature and Hyperdrive method (to perform hyperparameter tuning). Upon successful training, the best model from either the AutoML/Hyperdrive run will be registered and deployed to an endpoint where one can consume it (by entering JSON data and the resulting endpoint will return a 'Yes' or 'No' as to whether the entered data signifies it is a higher churner or not).
+<br>
+### Project Architecture
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
 
 ## Dataset
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
+This will be a classification model as I am training on whether a customer will churn or not. 
+<br>
 It has the following columns and the Y variable 'Churn' is 'Yes' or 'No'<br>
 <br>
 <font size = '9'>
@@ -48,12 +53,6 @@ MonthlyCharges - What are the monthly charges the acct holder pays<br>
 TotalCharges - What is the total amount an acct holder pays<br>
 Churn - Did the acct holder churn (Y Variable)<br>
 </font>
-
-### Overview
-*TODO*: Explain about the data you are using and where you got it from.
-
-### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
