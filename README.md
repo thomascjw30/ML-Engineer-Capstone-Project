@@ -57,11 +57,11 @@ Churn - Did the acct holder churn (Y Variable)<br>
 ### Access
 For Microsoft Azure access, I created my own trial account, Ms Azure was able to grant me 250 CAD credits and a full month of access.
 <br>
-For dataset access, I have downloaded the dataset and uploaded into github to directly connect to the flat file (link here: <a href="https://raw.githubusercontent.com/thomascjw30/ML-Engineer-Capstone-Project/main/WA_Fn-UseC_-Telco-Customer-Churn.csv">link</a>).
-<br>
+For dataset access, I have downloaded the dataset and uploaded into github to directly connect to the flat file (<a href="https://raw.githubusercontent.com/thomascjw30/ML-Engineer-Capstone-Project/main/WA_Fn-UseC_-Telco-Customer-Churn.csv">link</a>).
+<br><br>
 For AutoML, I have referenced the file in the jupyter notebook (automl.ipynb).:
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_automl.png'>
-<br>
+<br><br>
 For Hyperdrive, I have reference the file in the train.py script: 
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/data_access_trainpy.png'>
 
