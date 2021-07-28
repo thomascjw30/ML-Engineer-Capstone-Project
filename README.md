@@ -24,7 +24,7 @@ The task for this project is to clean, prepare the data for training utilizing b
 ### Project Architecture
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
 
-## Dataset - First Step
+## Dataset - 1st Step
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
 This will be a classification model as I am training on whether a customer will churn or not. <br>
 Before any training with the dataset, I've made sure to remove customerID field as I believe it will not impact anything as it is a unique variable to each account.
@@ -72,7 +72,7 @@ For Hyperdrive, I have reference the file in the train.py script:
 AutoML is a feature built in Microsoft Azure ML studio, it an automated process/feature where it reads in the dataset, run multiple iterations with various algorithms. After a number of runs, it will produce the best model depending on the criteria being measured (it can be accuracy, recall, precision, AUC, MAE, MSE, etc.).
 <br>
 For my dataset, I have selected Accuracy as the main criteria for determining the best model (as it is a binary classification model). <br>
-Additionally, I set timeout to 30 minutes and max_concurrent_iterations to 10 (since I did not want to wait too long and it is a trial account with no additional cost on my end).
+Additionally, I set timeout to 30 minutes and max_concurrent_iterations to 10 (since I did not want to wait too long and it is a trial account with no additional cost on my end). Lastly, I selected the usual 'STANDARD_D2_V2' cluster as this is not a complicated, deep learning training so the standard D2 should suffice.
 <br>
 The Y-Variable is 'Churn' - as I am predicting whether an account will likely churn or not.
 
@@ -85,11 +85,19 @@ The best performing model (Azure GUI).
 The properties of the best performing model from AutoML (Voting Ensemble Model)
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/auto_bestmodel_features.png'>
 <br>
+<br>
+The results for AutoML was decent, although I personally hoped it would have been higher, but 81% accuracy on a binary classification example is still pretty good. Improvements could've been done by feature engineering the data for more features/variables but given this project's main focus is to train via AutoML + Hyperdrive and deploy the best model for endpoint consumption, I left it as is for now.
+<br><br>
 
-
-
-## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+## Hyperparameter Tuning - 3rd Step
+Next is to train our hyperdrive, hoping it can produce accuracy/results better than the best AutoML model above. <br>
+Before proceeding, there were lots I had to tweak, as Hyperdrive did not function like AutoML where it was a one-step run, there were numerous python scripts I had to adjust for my dataset.
+<br>
+Firstly, I had to create/modify my train.py script to better clean and prepare my data for training.
+<br>
+I converted many of the variables to dummy variables as many of them were categorical variables (all were categorical variables except 'Monthly charge' and 'total charge').
+Additionally, I split the data between training and test set, leaving 20% for testing.
+<img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/train_script.png'>
 
 
 ### Results
