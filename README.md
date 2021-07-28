@@ -26,7 +26,8 @@ The task for this project is to clean, prepare the data for training utilizing b
 
 ## Dataset
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
-This will be a classification model as I am training on whether a customer will churn or not. 
+This will be a classification model as I am training on whether a customer will churn or not. <br>
+Before any training with the dataset, I've made sure to remove customerID field as I believe it will not impact anything as it is a unique variable to each account.
 <br>
 It has the following columns and the Y variable 'Churn' is 'Yes' or 'No'<br>
 <br>
@@ -74,13 +75,10 @@ Additionally, I set timeout to 30 minutes and max_concurrent_iterations to 10 (s
 The Y-Variable is 'Churn' - as I am predicting whether an account will likely churn or not.
 
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_settings.png'>
-The best performing algorithmn for my dataset was VotingEnsemble.
+The best performing algorithmn for my dataset was VotingEnsemble (w/ 80.9% accuracy).
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_widget_run_detail.png'>
 
 
-
-### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
