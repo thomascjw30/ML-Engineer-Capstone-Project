@@ -19,6 +19,13 @@ Several business use cases could be applied to this dataset/project, such as arm
 - Finance could use this to potentially budget expenses, measure future churn, etc.
 
 
+## Task
+The task for this project is to clean, prepare the data for training utilizing both Azure's AutoML feature and Hyperdrive method (to perform hyperparameter tuning). Upon successful training, the best model from either the AutoML/Hyperdrive run will be registered and deployed to an endpoint where one can consume it (by entering JSON data and the resulting endpoint will return a 'Yes' or 'No' as to whether the entered data signifies it is a higher churner or not).
+<br>
+
+## Project Architecture
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
+
 ## Project Files
 
 <br>
@@ -36,11 +43,7 @@ Several business use cases could be applied to this dataset/project, such as arm
 - score.py : python script used to deploy the model
 <br>
 
-## Task
-The task for this project is to clean, prepare the data for training utilizing both Azure's AutoML feature and Hyperdrive method (to perform hyperparameter tuning). Upon successful training, the best model from either the AutoML/Hyperdrive run will be registered and deployed to an endpoint where one can consume it (by entering JSON data and the resulting endpoint will return a 'Yes' or 'No' as to whether the entered data signifies it is a higher churner or not).
-<br>
-### Project Architecture
-<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
+
 
 ## Dataset - 1st Step
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
