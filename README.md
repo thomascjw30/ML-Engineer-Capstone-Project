@@ -21,13 +21,16 @@ Several business use cases could be applied to this dataset/project, such as arm
 ## Project Files
 <br>
 - automl.ipynb : notebook file for the AutoML execution/run
+<br>
 - endpoint.py : python script used to consume the produced endpoint
+<br>
 - train.py : python script that the HyperDrive operates on in order to produce the runs
-- hyperparameter_tuning.ipynb : notebook file used for the HyperDrive execution
-- WA_Fn-UseC_-Telco-Customer-Churn.csv : dataset used to carried out in this project
-- env.yml : environment file 
-- best_run_hyperdrive.pkl : best model from the HyperDrive run 
-- best_run_automl.pkl : best model from the AutoML run
+<br>
+- hyperparameter_tuning.ipynb : notebook file used for the HyperDrive execution <br>
+- WA_Fn-UseC_-Telco-Customer-Churn.csv : dataset used to carried out in this project <br>
+- env.yml : environment file  <br>
+- best_run_hyperdrive.pkl : best model from the HyperDrive run  <br>
+- best_run_automl.pkl : best model from the AutoML run<br>
 - score.py : python script used to deploy the model
 <br>
 
