@@ -124,15 +124,37 @@ The best model from the Hyperdrive training was having a max depth of 9 along wi
 <img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_run_best_model_azure.png' >
 <img src ='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/hyperdrive_best_model.png' >
 
+<br>
 
+## Model Deployment - 4th Step
 
-### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+Given we have trained with both AutoML and HyperDrive methods, and the results were 81% vs 78.6% respectively, I decided to deploy the AutoML model, since it had a higher accuracy %. In order to deploy and test the model, there were two scripts I had to adjust first:
+<br>
+- Score.py
+- Endpoint.py
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Firstly, I had to specify which model I was going to use in the score.py script. Since I decided to use AutoML i had to make sure the score.py script was referencing the AutoML's best run model (which was saved earlier).
 
-## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/score_script.png'>
+
+Once the score.py script was properly configured, I registered my AutoML model and inferenced the score.py script. 
+Upon successful launch of the endpoint, a scoring URL was produced. The AciWebservice Class represents a machine learning model deployed as a web service endpoint on Azure Container Instances. The URL would be the address one could use to consume the ML model.
+
+<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_deploy_model.png'>
+
+Endpoint Status: Deployed, Live & Healthy
+<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/auto_endpoint_status.png'>
+
+Scoring within Jupyter notebook and executing endpoint.py. 
+Endpoint.py is a batch scoring script that pointed towards the scoring url.
+
+<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/endpoint_script.png'>
+<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_scoring_success.png'>
+
+It was successful! The results returned "[False, False]" - signifiying the provided data along with their variables were not churners.
+
+<img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_scoring_success.png'>
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
