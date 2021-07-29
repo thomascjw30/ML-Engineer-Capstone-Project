@@ -21,6 +21,7 @@ Several business use cases could be applied to this dataset/project, such as arm
 
 ## Project Files
 
+<br>
 - automl.ipynb : notebook file for the AutoML execution/run
 <br>
 - endpoint.py : python script used to consume the produced endpoint
