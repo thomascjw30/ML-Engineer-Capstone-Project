@@ -3,7 +3,6 @@
 # Telecom Customer Churn Predictor by: Thomas Choong 
 
 ## Introduction
-<br>
 The telecom industry has always been a high-activity industry with many customers coming and going. There can be multiple reasons why a customer decides to leave a provider (better pricing and/or product elsewhere, poor service, better reliability, etc.). Key to any company/business is to retain their customers and prevent churners; it is most cost-efficient to keep an existing customer than trying to acquire a net-new prospect, therefore, it is critical for businesses/companies to identify their high-risk customers and address their potential issues before they've churned. <br>
 <br>
 
