@@ -3,7 +3,6 @@
 # Capstone Project: Telecom Customer Churn Predictor <br>
 By: Thomas Choong
 
-<br>
 
 ## Introduction
 <br>
