@@ -13,10 +13,23 @@ The telecom industry has always been a high-activity industry with many customer
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn), I will be training the model on the aforementioned dataset with Azure's AutoML & Hyperdrive feature (classification training). <br>
 After training, the best model will be selected and pushed to an endpoint to be consumed. The result should give the user 'Yes' or 'No' indicating whether they are high risk churners. 
 
-This particular real-time API can open possibilities for internal teams to better service their customers:
+Several business use cases could be applied to this dataset/project, such as arming internal teams:
 - Frontline Reps can have insight to the specific customer
 - Sales & Marketing may have the option to target these specific customers to prevent churn
 - Finance could use this to potentially budget expenses, measure future churn, etc.
+<br>
+## Project Files
+<br>
+- automl.ipynb : notebook file for the AutoML execution/run
+- endpoint.py : python script used to consume the produced endpoint
+- train.py : python script that the HyperDrive operates on in order to produce the runs
+- hyperparameter_tuning.ipynb : notebook file used for the HyperDrive execution
+- WA_Fn-UseC_-Telco-Customer-Churn.csv : dataset used to carried out in this project
+- env.yml : environment file 
+- best_run_hyperdrive.pkl : best model from the HyperDrive run 
+- best_run_automl.pkl : best model from the AutoML run
+- score.py : python script used to deploy the model
+<br>
 
 ## Task
 The task for this project is to clean, prepare the data for training utilizing both Azure's AutoML feature and Hyperdrive method (to perform hyperparameter tuning). Upon successful training, the best model from either the AutoML/Hyperdrive run will be registered and deployed to an endpoint where one can consume it (by entering JSON data and the resulting endpoint will return a 'Yes' or 'No' as to whether the entered data signifies it is a higher churner or not).
@@ -149,7 +162,6 @@ Scoring within Jupyter notebook and executing endpoint.py.
 Endpoint.py is a batch scoring script that pointed towards the scoring url.
 
 <img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/endpoint_script_new.png'>
-<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_scoring_success.png'>
 
 It was successful! The results returned "[False, False]" - signifiying the provided data along with their variables were not churners.
 
