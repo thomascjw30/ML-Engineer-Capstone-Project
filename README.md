@@ -148,7 +148,7 @@ Endpoint Status: Deployed, Live & Healthy
 Scoring within Jupyter notebook and executing endpoint.py. 
 Endpoint.py is a batch scoring script that pointed towards the scoring url.
 
-<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/endpoint_script.png'>
+<img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/endpoint_script_new.png'>
 <img src= 'https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/automl_scoring_success.png'>
 
 It was successful! The results returned "[False, False]" - signifiying the provided data along with their variables were not churners.
