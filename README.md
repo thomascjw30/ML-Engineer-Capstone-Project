@@ -17,9 +17,12 @@ Several business use cases could be applied to this dataset/project, such as arm
 - Frontline Reps can have insight to the specific customer
 - Sales & Marketing may have the option to target these specific customers to prevent churn
 - Finance could use this to potentially budget expenses, measure future churn, etc.
-<br>
+
+
 ## Project Files
-<br>
+
+
+
 - automl.ipynb : notebook file for the AutoML execution/run
 <br>
 - endpoint.py : python script used to consume the produced endpoint
