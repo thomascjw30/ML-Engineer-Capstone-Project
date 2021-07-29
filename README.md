@@ -23,7 +23,6 @@ The task for this project is to clean, prepare the data for training utilizing b
 <img src='https://github.com/thomascjw30/ML-Engineer-Capstone-Project/blob/main/Screenshots/project%20architecture.png'>
 
 ## Project Files
-
 <br>
 - automl.ipynb : notebook file for the AutoML execution/run
 <br>
