@@ -1,8 +1,6 @@
 
-# Udacity Machine Learning Engineer with Microsoft Azure Nanodegree
-# Capstone Project: Telecom Customer Churn Predictor By: Thomas Choong 
-
-
+# Udacity Machine Learning Engineer with Microsoft Azure Nanodegree - Capstone Projec
+# Telecom Customer Churn Predictor by: Thomas Choong 
 
 ## Introduction
 <br>
