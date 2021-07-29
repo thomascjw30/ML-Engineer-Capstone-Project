@@ -42,6 +42,7 @@ The task for this project is to clean, prepare the data for training utilizing b
 
 ## Dataset - 1st Step
 This project will utilize data from Kaggle's Telecom Customer Dataset (Link: https://www.kaggle.com/blastchar/telco-customer-churn)<br>
+This dataset contains a customer's demographic data (gender, if they have dependents, if they are senior citizens) and also contains their relationship data with the company (such as their tenure with the company, what kind of service do they have, etc.), lastly, it contains whether the respective customer has churned or not. The idea behind this data is to utilize past history to identify future potential churners, if successful and accurate this could prove very valuable to companies in helping reduce churn.
 This will be a classification model as I am training on whether a customer will churn or not. <br>
 Before any training with the dataset, I've made sure to remove customerID field as I believe it will not impact anything as it is a unique variable to each account.
 <br>
