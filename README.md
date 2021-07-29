@@ -173,10 +173,7 @@ It was successful! The results returned "[False, False]" - signifiying the provi
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+Here is a <a href='https://youtu.be/AfRIejAeBzc'>Link</a> to watch the model consumption.
 
 ## Improvement Suggestions
 Increasing the accuracy:
